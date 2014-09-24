@@ -11,6 +11,6 @@ a collection of cookiecutter molds mostly for Python and Java.
 
 ## Addendum
 
-![CC0 license](http://img.shields.io/badge/license-CC0-red.svg*)  *for the website contents.*
+![CC0 license](http://img.shields.io/badge/license-CC0-red.svg)  *for the website contents.*
 
 [![1&1](https://raw.githubusercontent.com/1and1/1and1.github.io/master/images/1and1-logo-42.png)](https://github.com/1and1)  Project sponsored by [1&1](https://github.com/1and1).
