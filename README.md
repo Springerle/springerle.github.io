@@ -17,7 +17,7 @@ source ~/.bash_aliases
 # possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled
 
 # install "pipsi" and "cookiecutter"
-which pipsi || curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+which pipsi || curl "https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py" | python
 which cookiecutter || pipsi install cookiecutter
 cookiecutter --version
 ```
@@ -25,7 +25,10 @@ cookiecutter --version
 
 ## Using the templates
 
-**TODO**
+The Springerle [cookie-jar](https://github.com/Springerle/cookie-jar) repository collects pointers
+to ‘releases’ of the templates, i.e. references to tags in the various subprojects.
+These take the form of git submodules, so that you can check out all the templates in one fell swoop,
+and use them off-line or package them in some form.
 
 
 ## Addendum
