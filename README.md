@@ -3,6 +3,11 @@
 This is the website for “Springerle” ([/ʃpʀɪŋɛʀlə/](https://translate.google.com/#de/de/Springerle)),
 a collection of cookiecutter molds mostly for Python and Java.
 
+## Motivation and Goals
+
+The main goal of *Springerle* is to provide basic templates and add-on facets to incrementally build projects in a flexible and composable manner.
+
+
 ## Installing the cookiecutter CLI
 
 The following is an easy way to install the `cookiecutter` command line tool into your `$HOME`,
