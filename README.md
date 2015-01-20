@@ -5,7 +5,7 @@ a collection of cookiecutter molds mostly for Python and Java.
 
 ## Motivation and Goals
 
-The main goal of *Springerle* is to provide basic templates and add-on facets to incrementally build projects in a flexible and composable manner.
+The main goal of *Springerle* is to provide basic templates and add-on facets to incrementally set up projects in a flexible and composable manner.
 
 
 ## Installing the cookiecutter CLI
