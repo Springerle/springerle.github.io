@@ -34,12 +34,9 @@ The Springerle [cookie-jar](https://github.com/Springerle/cookie-jar) repository
 to ‘releases’ of the templates, i.e. references to tags in the various subprojects.
 These take the form of git submodules, so that you can check out all the templates in one fell swoop,
 and use them off-line or package them in some form.
-
-:bulb:
-To get *your* defaults for common template values `cookiecutter` will ask you for when you use a template,
-it make sense to have a
-[~/.cookiecutterrc](https://github.com/jhermann/ruby-slippers/blob/master/home/.cookiecutterrc)
-in your home directory. Follow the link to see an example.
+ 
+:bulb: | To get *your* defaults for common template values `cookiecutter` will ask you for when you use a template, it make sense to have a [~/.cookiecutterrc](https://github.com/jhermann/ruby-slippers/blob/master/home/.cookiecutterrc) in your home directory. Follow the link to see an example.
+---- | :----
 
 
 ## Addendum
