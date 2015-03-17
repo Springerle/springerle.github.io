@@ -26,6 +26,8 @@ which pipsi || curl "https://raw.githubusercontent.com/mitsuhiko/pipsi/master/ge
 which cookiecutter || pipsi install cookiecutter
 cookiecutter --version
 ```
+:bulb: | If you later want to update to a new version, just issue a `pipsi upgrade cookiecutter` command and you're done.
+---- | :----
 
 
 ## Using the templates
