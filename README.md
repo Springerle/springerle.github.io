@@ -7,6 +7,9 @@ a collection of cookiecutter molds mostly for Python and Java.
 
 The main goal of *Springerle* is to provide basic templates and add-on facets to incrementally set up projects in a flexible and composable manner.
 
+See “[Using the templates](#using-the-templates)” for details on which templates are available,
+and the following section for pre-requisites.
+
 
 ## Installing the cookiecutter CLI
 
