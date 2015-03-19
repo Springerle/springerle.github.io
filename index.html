@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Springerle : A collection of cookiecutter molds.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Springerle</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Springerle">View on GitHub</a>
+
+          <h1 id="project_title">Springerle</h1>
+          <h2 id="project_tagline">A collection of cookiecutter molds.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><img src="https://raw.github.com/Springerle/springerle.github.io/master/static/img/logo-64.png" alt="❏"></p>
+
+<p>This is the website for “Springerle” (<a href="https://translate.google.com/#de/de/Springerle">/ʃpʀɪŋɛʀlə/</a>),
+a collection of cookiecutter molds mostly for Python and Java.</p>
+
+<h2>
+<a id="motivation-and-goals" class="anchor" href="#motivation-and-goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation and Goals</h2>
+
+<p>The main goal of <em>Springerle</em> is to provide basic templates and add-on facets to incrementally set up projects in a flexible and composable manner.</p>
+
+<h2>
+<a id="installing-the-cookiecutter-cli" class="anchor" href="#installing-the-cookiecutter-cli" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the cookiecutter CLI</h2>
+
+<p>The following is an easy way to install the <code>cookiecutter</code> command line tool into your <code>$HOME</code>,
+with the help of <a href="https://github.com/mitsuhiko/pipsi">pipsi</a>.</p>
+
+<div class="highlight highlight-sh"><pre><span class="pl-c"># add "pipsi" bin dir to PATH, permanently</span>
+grep <span class="pl-s1"><span class="pl-pds">'</span>/.local/bin:<span class="pl-pds">'</span></span> <span class="pl-k">~</span>/.bash_aliases <span class="pl-k">&gt;</span>/dev/null <span class="pl-k">2&gt;&amp;1</span> <span class="pl-k">||</span> <span class="pl-s3">echo</span> <span class="pl-k">&gt;&gt;</span>~/.bash_aliases \
+    <span class="pl-s1"><span class="pl-pds">'</span>grep ":$HOME/.local/bin:" &lt;&lt;&lt;":$PATH:" &gt;/dev/null || export PATH="$HOME/.local/bin:$PATH"<span class="pl-pds">'</span></span>
+<span class="pl-s3">source</span> <span class="pl-k">~</span>/.bash_aliases
+
+<span class="pl-c"># possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled</span>
+
+<span class="pl-c"># install "pipsi" and "cookiecutter"</span>
+which pipsi <span class="pl-k">||</span> curl <span class="pl-s1"><span class="pl-pds">"</span>https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py<span class="pl-pds">"</span></span> <span class="pl-k">|</span> python
+which cookiecutter <span class="pl-k">||</span> pipsi install cookiecutter
+cookiecutter --version</pre></div>
+
+<table>
+<thead>
+<tr>
+<th><img class="emoji" title=":bulb:" alt=":bulb:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20" align="absmiddle"></th>
+<th align="left">If you later want to update to a new version, just issue a <code>pipsi upgrade cookiecutter</code> command and you're done.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h2>
+<a id="using-the-templates" class="anchor" href="#using-the-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using the templates</h2>
+
+<p>The Springerle <a href="https://github.com/Springerle/cookie-jar">cookie-jar</a> repository collects pointers
+to ‘releases’ of the templates, i.e. references to tags in the various subprojects.
+These take the form of git submodules, so that you can check out all the templates in one fell swoop,
+and use them off-line or package them in some form.</p>
+
+<table>
+<thead>
+<tr>
+<th><img class="emoji" title=":bulb:" alt=":bulb:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" height="20" width="20" align="absmiddle"></th>
+<th align="left">To get <em>your</em> defaults for common template values <code>cookiecutter</code> will ask you for when you use a template, it makes sense to have a <a href="https://github.com/jhermann/ruby-slippers/blob/master/home/.cookiecutterrc">~/.cookiecutterrc</a> in your home directory. Follow the link to see an example.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<h2>
+<a id="addendum" class="anchor" href="#addendum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Addendum</h2>
+
+<p><img src="http://img.shields.io/badge/license-CC0-red.svg" alt="CC0 license">  <em>for the website contents.</em></p>
+
+<p><a href="https://github.com/1and1"><img src="https://raw.githubusercontent.com/1and1/1and1.github.io/master/images/1and1-logo-42.png" alt="1&amp;1"></a>  Project sponsored by <a href="https://github.com/1and1">1&amp;1</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
