@@ -9,6 +9,9 @@ The main goal of *Springerle* is to provide basic templates and add-on facets to
 
 See “[Using the templates](#using-the-templates)” for details on which templates are available,
 and the following section for pre-requisites.
+To talk about the templates contained in the project, and to get support, please use the
+[springerle-users](https://groups.google.com/d/forum/springerle-users)
+Google group / mailing list. Please note that only members can post, but anyone can join.
 
 
 ## Installing the cookiecutter CLI
