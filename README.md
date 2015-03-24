@@ -46,6 +46,12 @@ and use them off-line or package them in some form.
 :bulb: | To get *your* defaults for common template values `cookiecutter` will ask you for when you use a template, it makes sense to have a [~/.cookiecutterrc](https://github.com/jhermann/ruby-slippers/blob/master/home/.cookiecutterrc) in your home directory. Follow the link to see an example.
 ---- | :----
 
+## Project Archetype Tools
+
+ * [Cookiecutter](https://github.com/audreyr/cookiecutter)
+
+ * [Yeoman](http://yeoman.io/) – The web's scaffolding tool for modern webapps.
+
 
 ## Addendum
 
