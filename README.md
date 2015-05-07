@@ -32,6 +32,15 @@ which pipsi || curl "https://raw.githubusercontent.com/mitsuhiko/pipsi/master/ge
 which cookiecutter || pipsi install cookiecutter
 cookiecutter --version
 ```
+
+To upgrade this to the enhanced version from this repository (which supports license post-processing
+and easy upgrading of existing projects), also run this:
+
+```sh
+~/.local/venvs/cookiecutter/bin/pip install -U \
+    https://github.com/Springerle/cookiecutter/archive/add-no-rc-option.zip
+```
+
 :bulb: | If you later want to update to a new version, just issue a `pipsi upgrade cookiecutter` command and you're done.
 ---- | :----
 
