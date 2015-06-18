@@ -16,7 +16,16 @@ Google group / mailing list. Please note that only members can post, but anyone 
 
 ## Installing the cookiecutter CLI
 
-The following is an easy way to install the `cookiecutter` command line tool into your `$HOME`,
+If you are on a 64bit Linux machine, use the *PEX release* as follows:
+
+```sh
+curl -Lo ~/bin/cookiecutter \
+    "https://github.com/jhermann/cookiecutter/releases/download/v1.0.1/cookiecutter-1.0.1-cp27-none-linux_x86_64.pex"
+chmod a+x ~/bin/cookiecutter
+cookiecutter --version
+```
+
+On other platforms, the following is an easy way to install the `cookiecutter` command line tool into your `$HOME`,
 with the help of [pipsi](https://github.com/mitsuhiko/pipsi).
 
 ```sh
@@ -33,15 +42,15 @@ which cookiecutter || pipsi install cookiecutter
 cookiecutter --version
 ```
 
-To upgrade this to the enhanced version from this repository (which supports license post-processing
-and easy upgrading of existing projects), also run this:
+To upgrade this to the enhanced version which supports license post-processing
+and easy upgrading of existing projects, also run this:
 
 ```sh
 ~/.local/venvs/cookiecutter/bin/pip install -U \
-    https://github.com/Springerle/cookiecutter/archive/add-no-rc-option.zip
+    https://github.com/jhermann/cookiecutter/archive/master.zip
 ```
 
-:bulb: | If you later want to update to a new version, just issue a `pipsi upgrade cookiecutter` command and you're done.
+:bulb: | If you later want to update to a new official release version, just issue a `pipsi upgrade cookiecutter` command and you're done.
 ---- | :----
 
 
