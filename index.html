@@ -32,17 +32,10 @@
 <p>This is the website for “Springerle” (<a href="https://translate.google.com/#de/de/Springerle">/ʃpʀɪŋɛʀlə/</a>),
 a collection of cookiecutter molds mostly for Python and Java.</p>
 
-
 <h2>
 <a id="motivation-and-goals" class="anchor" href="#motivation-and-goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation and Goals</h2>
 
 <p>The main goal of <em>Springerle</em> is to provide basic templates and add-on facets to incrementally set up projects in a flexible and composable manner.</p>
-
-<p>See “<a href="#using-the-templates">Using the templates</a>” below for details on which templates are available,
-and the following section for pre-requisites.
-To talk about the templates contained in the project, and to get support, please use the
-<a href="https://groups.google.com/d/forum/springerle-users" target="springerle-users">springerle-users</a>
-Google group / mailing list. Please note that only members can post, but anyone can join.</p>
 
 <h2>
 <a id="installing-the-cookiecutter-cli" class="anchor" href="#installing-the-cookiecutter-cli" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing the cookiecutter CLI</h2>
@@ -51,14 +44,14 @@ Google group / mailing list. Please note that only members can post, but anyone 
 with the help of <a href="https://github.com/mitsuhiko/pipsi">pipsi</a>.</p>
 
 <div class="highlight highlight-sh"><pre><span class="pl-c"># add "pipsi" bin dir to PATH, permanently</span>
-grep <span class="pl-s1"><span class="pl-pds">'</span>/.local/bin:<span class="pl-pds">'</span></span> <span class="pl-k">~</span>/.bash_aliases <span class="pl-k">&gt;</span>/dev/null <span class="pl-k">2&gt;&amp;1</span> <span class="pl-k">||</span> <span class="pl-s3">echo</span> <span class="pl-k">&gt;&gt;</span>~/.bash_aliases \
-    <span class="pl-s1"><span class="pl-pds">'</span>grep ":$HOME/.local/bin:" &lt;&lt;&lt;":$PATH:" &gt;/dev/null || export PATH="$HOME/.local/bin:$PATH"<span class="pl-pds">'</span></span>
-<span class="pl-s3">source</span> <span class="pl-k">~</span>/.bash_aliases
+grep <span class="pl-s"><span class="pl-pds">'</span>/.local/bin:<span class="pl-pds">'</span></span> <span class="pl-k">~</span>/.bash_aliases <span class="pl-k">&gt;</span>/dev/null <span class="pl-k">2&gt;&amp;1</span> <span class="pl-k">||</span> <span class="pl-c1">echo</span> <span class="pl-k">&gt;&gt;</span>~/.bash_aliases \
+    <span class="pl-s"><span class="pl-pds">'</span>grep ":$HOME/.local/bin:" &lt;&lt;&lt;":$PATH:" &gt;/dev/null || export PATH="$HOME/.local/bin:$PATH"<span class="pl-pds">'</span></span>
+<span class="pl-c1">source</span> <span class="pl-k">~</span>/.bash_aliases
 
 <span class="pl-c"># possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled</span>
 
 <span class="pl-c"># install "pipsi" and "cookiecutter"</span>
-which pipsi <span class="pl-k">||</span> curl <span class="pl-s1"><span class="pl-pds">"</span>https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py<span class="pl-pds">"</span></span> <span class="pl-k">|</span> python
+which pipsi <span class="pl-k">||</span> curl <span class="pl-s"><span class="pl-pds">"</span>https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py<span class="pl-pds">"</span></span> <span class="pl-k">|</span> python
 which cookiecutter <span class="pl-k">||</span> pipsi install cookiecutter
 cookiecutter --version</pre></div>
 
@@ -95,7 +88,7 @@ and use them off-line or package them in some form.</p>
 <h2>
 <a id="addendum" class="anchor" href="#addendum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Addendum</h2>
 
-<p><img src="http://img.shields.io/badge/license-CC0-red.svg" alt="CC0 license">  <em>for this index page.</em></p>
+<p><img src="http://img.shields.io/badge/license-CC0-red.svg" alt="CC0 license">  <em>for the website contents.</em></p>
 
 <p><a href="https://github.com/1and1"><img src="https://raw.githubusercontent.com/1and1/1and1.github.io/master/images/1and1-logo-42.png" alt="1&amp;1"></a>  Project sponsored by <a href="https://github.com/1and1">1&amp;1</a>.</p>
       </section>
@@ -108,7 +101,7 @@ and use them off-line or package them in some form.</p>
       </footer>
     </div>
 
-
+    
 
   </body>
 </html>
