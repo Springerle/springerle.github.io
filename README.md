@@ -29,20 +29,19 @@ On other platforms, the following is an easy way to install the `cookiecutter` c
 with the help of [pipsi](https://github.com/mitsuhiko/pipsi).
 
 ```sh
-# add "pipsi" bin dir to PATH, permanently
-grep '/.local/bin:' ~/.bash_aliases >/dev/null 2>&1 || echo >>~/.bash_aliases \
-    'grep ":$HOME/.local/bin:" <<<":$PATH:" >/dev/null || export PATH="$HOME/.local/bin:$PATH"'
-source ~/.bash_aliases
-
 # possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled
 
-# install "pipsi" and "cookiecutter"
-which pipsi || curl "https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py" | python
-which cookiecutter || pipsi install cookiecutter
+# install "cookiecutter" to its own virtualenv
+mkdir -p ~/bin ~/.local/venvs
+test -d ~/.local/venvs/cookiecutter \
+    || virtualenv ~/.local/venvs/cookiecutter
+~/.local/venvs/cookiecutter/bin/pip install -U pip setuptools wheel
+~/.local/venvs/cookiecutter/bin/pip install -U cookiecutter
+ln -s ~/.local/venvs/cookiecutter/bin/cookiecutter ~/bin
 cookiecutter --version
 ```
 
-To upgrade this to the enhanced version which supports license post-processing
+To change this to the patched version which supports license post-processing
 and easy upgrading of existing projects, also run this:
 
 ```sh
