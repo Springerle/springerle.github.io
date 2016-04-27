@@ -25,8 +25,8 @@ chmod a+x ~/bin/cookiecutter
 cookiecutter --version
 ```
 
-On other platforms, the following is an easy way to install the `cookiecutter` command line tool into your `$HOME`,
-with the help of [pipsi](https://github.com/mitsuhiko/pipsi).
+On other platforms, the following installs the `cookiecutter` command line tool into your `$HOME`,
+in a dedicated directory you can easily get rid of.
 
 ```sh
 # possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled
@@ -48,9 +48,6 @@ and easy upgrading of existing projects, also run this:
 ~/.local/venvs/cookiecutter/bin/pip install -U \
     https://github.com/jhermann/cookiecutter/archive/master.zip
 ```
-
-:bulb: | If you later want to update to a new official release version, just issue a `pipsi upgrade cookiecutter` command and you're done.
----- | :----
 
 
 ## Using the templates
