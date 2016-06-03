@@ -16,16 +16,7 @@ Google group / mailing list. Please note that only members can post, but anyone 
 
 ## Installing the cookiecutter CLI
 
-If you are on a 64bit Linux machine, use the *PEX release* as follows:
-
-```sh
-curl -Lo ~/bin/cookiecutter \
-    "https://github.com/jhermann/cookiecutter/releases/download/v1.0.1/cookiecutter-1.0.1-cp27-none-linux_x86_64.pex"
-chmod a+x ~/bin/cookiecutter
-cookiecutter --version
-```
-
-On other platforms, the following installs the `cookiecutter` command line tool into your `$HOME`,
+The following installs the `cookiecutter` command line tool into your `$HOME`,
 in a dedicated directory you can easily get rid of.
 
 ```sh
@@ -41,7 +32,7 @@ ln -s ~/.local/venvs/cookiecutter/bin/cookiecutter ~/bin
 cookiecutter --version
 ```
 
-To change this to the patched version which supports license post-processing
+To change this to the *patched version* which supports license post-processing
 and easy upgrading of existing projects, also run this:
 
 ```sh
