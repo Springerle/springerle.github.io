@@ -27,7 +27,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>This is the website for “Springerle” (<a href="https://translate.google.com/#de/de/Springerle">/ʃpʀɪŋɛʀlə/</a>),
+        <p><img src="https://raw.github.com/Springerle/springerle.github.io/master/static/img/logo-64.png" alt="❏"> <strong>pringerle</strong></p>
+
+<p>This is the website for “Springerle” (<a href="https://translate.google.com/#de/de/Springerle">/ʃpʀɪŋɛʀlə/</a>),
 a collection of cookiecutter molds mostly for Python and Java.</p>
 
 <h2>
@@ -44,44 +46,25 @@ Google group / mailing list. Please note that only members can post, but anyone 
 <h2>
 <a id="installing-the-cookiecutter-cli" class="anchor" href="#installing-the-cookiecutter-cli" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing the cookiecutter CLI</h2>
 
-<p>If you are on a 64bit Linux machine, use the <em>PEX release</em> as follows:</p>
+<p>The following installs the <code>cookiecutter</code> command line tool into your <code>$HOME</code>,
+in a dedicated directory you can easily get rid of.</p>
 
-<div class="highlight highlight-source-shell"><pre>curl -Lo <span class="pl-k">~</span>/bin/cookiecutter \
-    <span class="pl-s"><span class="pl-pds">"</span>https://github.com/jhermann/cookiecutter/releases/download/v1.0.1/cookiecutter-1.0.1-cp27-none-linux_x86_64.pex<span class="pl-pds">"</span></span>
-chmod a+x <span class="pl-k">~</span>/bin/cookiecutter
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled</span>
+
+<span class="pl-c"># install "cookiecutter" to its own virtualenv</span>
+mkdir -p <span class="pl-k">~</span>/bin <span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs
+<span class="pl-c1">test</span> -d <span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter \
+    <span class="pl-k">||</span> virtualenv <span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter
+<span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter/bin/pip install -U pip setuptools wheel
+<span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter/bin/pip install -U cookiecutter
+ln -s <span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter/bin/cookiecutter <span class="pl-k">~</span>/bin
 cookiecutter --version</pre></div>
 
-<p>On other platforms, the following is an easy way to install the <code>cookiecutter</code> command line tool into your <code>$HOME</code>,
-with the help of <a href="https://github.com/mitsuhiko/pipsi">pipsi</a>.</p>
-
-<div class="highlight highlight-source-shell"><pre><span class="pl-c"># add "pipsi" bin dir to PATH, permanently</span>
-grep <span class="pl-s"><span class="pl-pds">'</span>/.local/bin:<span class="pl-pds">'</span></span> <span class="pl-k">~</span>/.bash_aliases <span class="pl-k">&gt;</span>/dev/null <span class="pl-k">2&gt;&amp;1</span> <span class="pl-k">||</span> <span class="pl-c1">echo</span> <span class="pl-k">&gt;&gt;</span>~/.bash_aliases \
-    <span class="pl-s"><span class="pl-pds">'</span>grep ":$HOME/.local/bin:" &lt;&lt;&lt;":$PATH:" &gt;/dev/null || export PATH="$HOME/.local/bin:$PATH"<span class="pl-pds">'</span></span>
-<span class="pl-c1">source</span> <span class="pl-k">~</span>/.bash_aliases
-
-<span class="pl-c"># possibly activate a HTTP proxy or PyPI mirror here, if you're firewalled</span>
-
-<span class="pl-c"># install "pipsi" and "cookiecutter"</span>
-which pipsi <span class="pl-k">||</span> curl <span class="pl-s"><span class="pl-pds">"</span>https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py<span class="pl-pds">"</span></span> <span class="pl-k">|</span> python
-which cookiecutter <span class="pl-k">||</span> pipsi install cookiecutter
-cookiecutter --version</pre></div>
-
-<p>To upgrade this to the enhanced version which supports license post-processing
+<p>To change this to the <em>patched version</em> which supports license post-processing
 and easy upgrading of existing projects, also run this:</p>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-k">~</span>/.<span class="pl-k">local</span>/venvs/cookiecutter/bin/pip install -U \
     https://github.com/jhermann/cookiecutter/archive/master.zip</pre></div>
-
-<table>
-<thead>
-<tr>
-<th><g-emoji alias="bulb" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji></th>
-<th align="left">If you later want to update to a new official release version, just issue a <code>pipsi upgrade cookiecutter</code> command and you're done.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
 
 <h2>
 <a id="using-the-templates" class="anchor" href="#using-the-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the templates</h2>
