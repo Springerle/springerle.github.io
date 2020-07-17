@@ -14,7 +14,7 @@ To talk about the templates contained in the project, and to get support, please
 Google group / mailing list. Please note that only members can post, but anyone can join.
 
 
-## Installing the cookiecutter CLI
+## Installing the Cookiecutter CLI
 
 The following installs the `cookiecutter` command line tool into your `$HOME`,
 in a dedicated directory you can easily get rid of.
@@ -41,7 +41,7 @@ and easy upgrading of existing projects, also run this:
 ```
 
 
-## Using the templates
+## Using the Templates
 
 The Springerle [cookie-jar](https://github.com/Springerle/cookie-jar) repository collects pointers
 to ‘releases’ of the templates, i.e. references to tags in the various subprojects.
