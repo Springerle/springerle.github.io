@@ -1,4 +1,4 @@
-# ![❏](https://raw.github.com/Springerle/springerle.github.io/master/static/img/logo-64.png) Springerle
+![❏](https://raw.github.com/Springerle/springerle.github.io/master/static/img/logo-64.png) pringerle
 
 This is the website for “Springerle” ([/ʃpʀɪŋɛʀlə/](https://translate.google.com/#de/de/Springerle)),
 a collection of cookiecutter molds mostly for Python, Java, and technical docs (manuals and presentations).
