@@ -1,7 +1,7 @@
 # ![❏](https://raw.github.com/Springerle/springerle.github.io/master/static/img/logo-64.png) Springerle
 
 This is the website for “Springerle” ([/ʃpʀɪŋɛʀlə/](https://translate.google.com/#de/de/Springerle)),
-a collection of cookiecutter molds mostly for Python and Java.
+a collection of cookiecutter molds mostly for Python, Java, and technical docs (manuals and presentations).
 
 ## Motivation and Goals
 
@@ -51,11 +51,22 @@ and use them off-line or package them in some form.
 :bulb: | To get *your* defaults for common template values `cookiecutter` will ask you for when you use a template, it makes sense to have a [~/.cookiecutterrc](https://github.com/jhermann/ruby-slippers/blob/master/home/.cookiecutterrc) in your home directory. Follow the link to see an example.
 ---- | :----
 
+## Add-on Tools
+
+This is a list of tools that provide additional features to work with Cookiecutter projects and their instances.
+
+ * [senseyeio/cupper](https://github.com/senseyeio/cupper): Update cookiecutter projects using ``git`` and a JSON namespace.
+ * [ionelmc/python-cookiepatcher](https://github.com/ionelmc/python-cookiepatcher): Just a small shim around Cookiecutter that alters the CLI a bit, for reapplying templates to existing projects with less headaches.
+* [hirokiky/cookiepatcher](https://github.com/hirokiky/cookiepatcher): Tool that applies updates of Cookiecutter templates to projects.
+* [cjolowicz/retrocookie](https://github.com/cjolowicz/retrocookie): Updates Cookiecutter templates with changes from generated projects (i.e. the inverse of the cookiepatchers).
+
+
 ## Project Archetype Tools
 
- * [Cookiecutter](https://github.com/audreyr/cookiecutter)
+ * [Cookiecutter](https://github.com/audreyr/cookiecutter): A command-line utility that creates projects from cookiecutters (project templates).
+ * [PizzaCutter](https://github.com/bitranox/PizzaCutter): A command-line utility that creates and updates software projects in any language from PizzaCutter project templates. It is conceptually similar to Cookiecutter, but on steroids.
 
- * [Yeoman](http://yeoman.io/) – The web's scaffolding tool for modern webapps.
+ * [Yeoman](http://yeoman.io/): The web's scaffolding tool for modern webapps.
 
 
 ## Addendum
