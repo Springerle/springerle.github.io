@@ -55,6 +55,7 @@ and use them off-line or package them in some form.
 
 This is a list of tools that provide additional features to work with Cookiecutter projects and their instances.
 
+ * [cruft](https://github.com/cruft/cruft): Allows you to maintain all the necessary cruft for packaging and building projects over their lifetime, separate from the code you intentionally write. Built on-top of, and full compatible with, CookieCutter.
  * [senseyeio/cupper](https://github.com/senseyeio/cupper): Update cookiecutter projects using ``git`` and a JSON namespace.
  * [ionelmc/python-cookiepatcher](https://github.com/ionelmc/python-cookiepatcher): Just a small shim around Cookiecutter that alters the CLI a bit, for reapplying templates to existing projects with less headaches.
 * [hirokiky/cookiepatcher](https://github.com/hirokiky/cookiepatcher): Tool that applies updates of Cookiecutter templates to projects.
